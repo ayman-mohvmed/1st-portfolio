@@ -1,0 +1,402 @@
+/* start css file */
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #000;
+    padding: 0px;
+}
+
+/* header of the website */
+
+.header{
+    width: 100%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(40px);
+    font-size: 1.4em;
+    z-index: 999;
+}
+
+.header a{
+    text-decoration: none;
+}
+
+.nav-bar, .logo{
+    padding: 20px 120px;  
+}
+
+.logo{
+    transition: 0.4s;
+}
+
+.logo:hover{
+    transform: scale(0.7);
+    color: #a4a4a4;
+}
+
+.nav-bar a{
+    margin-left: 1.8em;
+    transition: 0.4s;
+}
+
+.nav-bar a:hover{
+    color: #003cff;
+}
+
+section{
+    padding: 152px 200px;
+}
+
+/* section1 home page */
+
+.section1{
+    background: url(portfolio\ again.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    padding-bottom: 240px;
+    max-height: 100vh;
+    width: 100%;
+}
+
+.section1 h1{
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-right: 40px;
+}
+
+.section1 h1 span{
+    display: inline-block;
+    margin-top: 14px;
+    font-size: 3em;
+    font-weight: 700;
+}
+
+.section1 h3{
+    display: flex;
+    letter-spacing: 1px;
+    font-size: 1.4em;
+    margin-top: 15px;
+}
+
+.play-btn{
+    font-size: 5em;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+.play-btn:hover{
+    opacity: .4;
+    transform: scale(1.1);
+}
+
+/* section2 project */
+
+.section2{
+    background: url(section\ 2\ bg.png);
+    min-height: 100vh;
+    padding-top: 65px; 
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.7em;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #fff;
+    width: 1.10em;
+    box-shadow: 0 5px 25px rgba( 1, 1, 1, 15% );
+    border-radius: 10px;
+    padding: 20px;
+    margin: 13px;
+    transition: 0.7s;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+.icon{
+    color: #3a6cf4;
+    font-size: 8em;
+    text-align: center;
+}
+
+.info{
+    text-align: center;
+}
+
+.info h3{
+    color: #3a6cf4;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.section2{
+    background-color: #575757;
+    min-height: 100vh;
+}
+
+.section2 .content{
+    margin-top: 10px;
+}
+
+.project-card{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(206, 206, 206);
+    border: 1.5px solid #303030;
+    min-height: 14em;
+    width: 17.27em; 
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.project-card:hover{
+    transform: scale(1.1);
+}
+
+.project-img{
+    display: flex;    
+    text-align: center;
+    height: 150px;
+    width: 150px;
+    transition: all 0.3s;
+}
+
+.image1{
+    display: flex;    
+    text-align: center;
+    padding-left: 60px;
+}
+
+.project-card:hover .project-img{
+    opacity: 0.5;
+}
+
+.project-info{
+    padding: 1em;
+}
+
+.project-category{
+    font-size: 0.8em;
+    color: #000;
+}
+
+.project-title{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details{
+    text-decoration: none;
+    color: #3a6cf4;
+}
+
+.more-details:hover{
+    color: #601cfc;
+}
+
+/* section3 contact */
+
+.section3{
+    min-height: 100vh;
+}
+
+/* .animation{
+    left: 0;
+    position: relative;
+    background-color: blue;
+    width: 350px;
+    height: 400px;
+    transition: 31s;
+}
+
+.animation:hover{
+    left: 1000px;
+} */
+
+@media (max-width: 450px){
+
+    /* header */
+
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 447px;
+        font-size: 0.9em;
+    }
+
+    .nav-bar, .logo{
+        padding: 20px 45px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .nav-bar{
+        padding: 20px 63px 20px 30px;
+    }
+
+    .nav-bar a{
+        margin-left: .8em;
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* section1 home page */
+
+    .section1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+    }
+
+    .section1 h1{
+        display: block;
+        align-items: center;
+        font-size: 1em;
+        margin-bottom: 60px;
+        padding-top: 7px;
+        margin-top: 130px;
+        margin-left: 60px;
+    }
+
+    .section1 h3{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 105px;
+        width: 208px;
+    }
+
+    /* section2 projects */
+
+    .section2{
+        min-height: 100vh;
+    }
+
+    .content{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        padding-right: 0px;
+    }
+
+    .project-card{
+        width: 250px;
+    }
+
+}
+
+@media (max-width:412px) {
+        /* header */
+
+
+        .header{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 447px;
+            font-size: 0.8em;
+        }
+    
+        .nav-bar, .logo{
+            padding: 20px 45px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .nav-bar{
+            padding: 20px 63px 20px 30px;
+        }
+    
+        .nav-bar a{
+            margin-left: .8em;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        /* section1 home page */
+    
+        .section1{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            position: relative;
+        }
+    
+        .section1 h1{
+            display: block;
+            align-items: center;
+            font-size: 1em;
+            margin-bottom: 60px;
+            padding-top: 7px;
+            margin-top: 130px;
+            margin-left: 60px;
+        }
+    
+        .section1 h3{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            margin-bottom: 105px;
+            width: 208px;
+        }
+    
+        /* section2 projects */
+    
+        .section2{
+            min-height: 100vh;
+        }
+    
+        .content{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-content: center;
+            padding-right: 0px;
+        }
+    
+        .project-card{
+            width: 250px;
+        }
+       
+}
