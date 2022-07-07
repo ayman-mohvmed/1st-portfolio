@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar-en" style="scroll-behavior: smooth;">
+    <head>
+        <title>
+            www.forgetpass.com
+        </title>
+        <meta charset="utf-8"
+              name="viewport"
+              content="width-device-width, initial-scale=1">
+        <style>
+            html{
+                background-color: #681800;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .goback{
+            width: 100px;
+            height: 40px;
+            border-radius: 0px 35px 35px 0;
+            background-color: white;
+            transition: .5s;
+            text-align: center;
+            margin-top: 70px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0,.5);
+        }
+        .goback:hover{
+            width: 180px;
+            border-radius: 0px 100% 100% 0;
+        }
+        .logintraininglink{
+            margin-top: 5px;
+            background-color: #fff;
+            border-radius: 100%;
+            color: yellow;
+            opacity: 0;
+            transition: .5s;
+            text-decoration: none;
+            font-size: 25px;
+            transition-duration: .5s;
+        }
+        .logintraininglink:hover{
+            opacity: 1;
+            border-radius: 100%;
+            color: #d63808;
+        }
+            .container{
+            width: 550px;
+            height: 440px;
+            background: linear-gradient(#d63808,#300f05);
+            color: #fff;
+            margin:auto;
+            margin-top: 8px;
+            text-align: center;
+            padding: 35px;
+            border: 3px solid rgb(255, 255, 255);
+            border-radius: 0px 50px 0px 50px;
+            box-shadow: 0 17px 30px rgba(0, 0, 0,.5),
+                        6px 22px 60px rgba(0, 0, 0,.8);  
+        }
+        input {
+            width: 100%;
+            height: 30px;
+            background-color: #681800;
+            border-radius: 35px;
+            color: #fff;
+            font-size: 16px;
+        }
+        p{
+            background: transparent;
+            font-size: 18px;
+        }
+        .numifnot{
+            opacity: .6;
+            font-size: 15px;
+        }
+        .sendcode{
+            width: 120px;
+            height: auto;
+            border: 1px solid yellow;
+            border-radius: 7px;
+            box-shadow: 0px 5px 17px rgba(0, 0, 0,.7);
+            cursor: pointer;
+            background-color: #d63808;
+            font-size: 17px;
+        }
+        .sendcode:active{
+            background-color: #912200;
+        }
+        </style>
+</head>
+<body>
+    <div class="goback">
+        <a class="logintraininglink" href="login.training.html">Go Back</a>
+    </div>
+    <div class="container">
+        <h2>Forget Password:</h2>
+        <p>Email:</p>
+        <input type="email" placeholder="Write Your Email:" >
+        <p>Number:<span class="numifnot">If Couldn’t Remember Your Email</span></p>
+        <input type="" name="" id="" placeholder="Write Your Number:">
+        <p>Write The Last Password You Remember:</p>
+        <input type="password" placeholder="Write Your Password:">
+        <p>confirm:</p>
+        <button class="sendcode">send code</button>
+    </div>
+</body>
